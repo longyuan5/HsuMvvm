@@ -32,6 +32,9 @@ object BuildPlugins {
     const val kotlinKapt = "kotlin-kapt"
     const val hiltPlugin = "dagger.hilt.android.plugin"
     const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Libraries.OpenVersions.hilt}"
+    const val navigationGradlePlugin = "androidx.navigation:navigation-safe-args-gradle-plugin::${Libraries.OpenVersions.navigation}"
+    const val navigationPluginKotlin = "androidx.navigation.safeargs.kotlin"
+    const val navigationPlugin = "androidx.navigation.safeargs"
 }
 
 object ScriptPlugins {
@@ -45,6 +48,7 @@ object Libraries {
 
     object OpenVersions {
         const val hilt = "2.28-alpha"
+        const val navigation = "2.3.4"
     }
 
     private object Versions {
@@ -58,7 +62,6 @@ object Libraries {
 
         // JetPack
         const val lifecycle = "2.3.0"
-        const val navigation = "2.3.4"
         const val paging = "3.0.0-alpha02"
         const val room = "2.2.5"
         const val workManager = "2.4.0-rc01"
@@ -92,9 +95,9 @@ object Libraries {
     const val lifecycleJava8 = "androidx.lifecycle:lifecycle-common-java8:${Versions.lifecycle}"
     const val lifecycleProcess = "androidx.lifecycle:lifecycle-process:${Versions.lifecycle}"
     const val lifecycleRxJava = "androidx.lifecycle:lifecycle-reactivestreams-ktx:${Versions.lifecycle}"
-    const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
-    const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
-    const val navigationDynamic = "androidx.navigation:navigation-dynamic-features-fragment:${Versions.navigation}"
+    const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${OpenVersions.navigation}"
+    const val navigationUi = "androidx.navigation:navigation-ui-ktx:${OpenVersions.navigation}"
+    const val navigationDynamic = "androidx.navigation:navigation-dynamic-features-fragment:${OpenVersions.navigation}"
     const val paging = "androidx.paging:paging-runtime:${Versions.paging}"
     const val room = "androidx.room:room-runtime:${Versions.room}"
     const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
