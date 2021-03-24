@@ -5,13 +5,13 @@ object Kotlin {
 }
 
 object AndroidSdk {
+    const val versionCode = 1
+    const val versionName = "1.0.0"
     const val minSdkVersion = 21
     const val compileSdkVersion = 30
     const val targetSdkVersion = compileSdkVersion
-    const val versionCode = 1
-    const val versionName = "1.0.0"
-    const val applicationId = "com.lunn.hsumvvm"
     const val buildToolsVersion = "29.0.3"
+    const val applicationId = "com.lunn.hsumvvm"
 
 }
 
