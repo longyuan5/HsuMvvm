@@ -125,7 +125,7 @@ object Libraries {
 
 object TestLibraries {
     private object Versions {
-        const val junit4 = "4.13.2"
+        const val junit = "4.13.2"
         const val mockk = "1.10.0"
         const val robolectric = "4.4"
         const val kluent = "1.14"
@@ -133,10 +133,10 @@ object TestLibraries {
         const val testRules = "1.1.0"
         const val espressoCore = "3.2.0"
         const val espressoIntents = "3.1.0"
-        const val testExtensions = "1.1.1"
+        const val testExtJunit = "1.1.1"
     }
 
-    const val junit4 = "junit:junit:${Versions.junit4}"
+    const val junit = "junit:junit:${Versions.junit}"
     const val mockk = "io.mockk:mockk:${Versions.mockk}"
     const val robolectric = "org.robolectric:robolectric:${Versions.robolectric}"
     const val kluent = "org.amshove.kluent:kluent:${Versions.kluent}"
@@ -144,7 +144,7 @@ object TestLibraries {
     const val testRules = "androidx.test:rules:${Versions.testRules}"
     const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
     const val espressoIntents = "androidx.test.espresso:espresso-intents:${Versions.espressoIntents}"
-    const val testExtJunit = "androidx.test.ext:junit:${Versions.testExtensions}"
+    const val testExtJunit = "androidx.test.ext:junit:${Versions.testExtJunit}"
 }
 
 object DevLibraries {
