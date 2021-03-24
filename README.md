@@ -1,2 +1,2 @@
 # HsuMvvm
-> 追上2021年技术发展脚步，重新构建`Android`现代化MVVM开发框架，应用技术包括不仅限于：`MVVM`, `Clean Architecture`, `DataBinding`, `DI`, `SPI`, `Google App Bundles`, `Gradle Plugins`, `JetPack`: `Navigation`, `LiveData`, `Lifecycle`, `Hilt`, `ViewModel`, `Room`, `Paging3`, `App Startup`,`WorkManager` ,`Kotlin`, `Kotlin DSL`, `KTX`, `Coroutines`协程, `Ktlint`
+> 追上2021年技术发展脚步，重新构建`Android`现代化MVVM开发框架，应用技术包括不仅限于：`MVVM`, `Clean Architecture`, `组件化多Module Architecture` ,`DataBinding`, `DI`, `SPI`, `Google App Bundles`, `Gradle Plugins`, `JetPack`: `Navigation`, `LiveData`, `Lifecycle`, `Hilt`, `ViewModel`, `Room`, `Paging3`, `App Startup`,`WorkManager` ,`Kotlin`, `Kotlin DSL`, `KTX`, `Coroutines`协程, `Ktlint`, `Detekt`, `Git Hook`
