@@ -1,9 +1,11 @@
+//kotlin版本
 object Kotlin {
     const val standardVersion = "1.4.31"
     const val coroutinesVersion = "1.4.1"
     const val ktxVersion = "1.3.2"
 }
 
+//android版本
 object AndroidSdk {
     const val versionCode = 1
     const val versionName = "1.0.0"
@@ -15,10 +17,12 @@ object AndroidSdk {
 
 }
 
+//android-script配置
 object AndroidConfig {
     const val testRunner = "androidx.test.runner.AndroidJUnitRunner"
 }
 
+//build.gradle配置
 object BuildPlugins {
     object Versions {
         const val gradleBuildToolsVersion = "4.1.3"
@@ -45,6 +49,7 @@ object ScriptPlugins {
     const val compilation = "scripts.compilation"
 }
 
+// 第三方库依赖
 object Libraries {
 
     object OpenVersions {
@@ -124,6 +129,7 @@ object Libraries {
 
 }
 
+//测试库依赖
 object TestLibraries {
     private object Versions {
         const val junit = "4.13.2"
@@ -148,6 +154,7 @@ object TestLibraries {
     const val testExtJunit = "androidx.test.ext:junit:${Versions.testExtJunit}"
 }
 
+//开发调试库依赖
 object DevLibraries {
     private object Versions {
         const val leakCanary = "2.5"
