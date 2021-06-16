@@ -10,6 +10,7 @@ import android.widget.TextView
 import com.lunn.hsumvvm.R
 
 class MainFragment : Fragment() {
+
     var msg : String? = null
 
     companion object {
@@ -29,7 +30,7 @@ class MainFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
 
-        view?.findViewById<TextView>(R.id.message)?.text = "wo shi $msg $this"
+        view?.findViewById<TextView>(R.id.message)?.text = "我是测试"
     }
 
 

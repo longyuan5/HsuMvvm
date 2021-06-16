@@ -8,10 +8,10 @@ object Kotlin {
 
 //全局build.gradle 依赖配置
 object GlobalBuildGradle {
+
     private object Versions {
         const val gradleVersion = "6.8.3"
         const val gradleBuildToolsVersion = "4.1.3"
-
     }
 
     const val androidGradleBuildToolsPlugin = "com.android.tools.build:gradle:${Versions.gradleBuildToolsVersion}"
