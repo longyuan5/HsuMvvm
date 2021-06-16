@@ -5,49 +5,21 @@ object Kotlin {
     const val ktxVersion = "1.3.2"
 }
 
-//android版本
-object AndroidSdk {
-    const val versionCode = 1
-    const val versionName = "1.0.0"
-    const val minSdkVersion = 21
-    const val compileSdkVersion = 30
-    const val targetSdkVersion = compileSdkVersion
-    const val buildToolsVersion = "29.0.3"
-    const val applicationId = "com.lunn.hsumvvm"
 
-}
-
-//android-script配置
-object AndroidConfig {
-    const val testRunner = "androidx.test.runner.AndroidJUnitRunner"
-}
-
-//build.gradle配置
-object BuildPlugins {
-    object Versions {
-        const val gradleBuildToolsVersion = "4.1.3"
+//全局build.gradle 依赖配置
+object GlobalBuildGradle {
+    private object Versions {
         const val gradleVersion = "6.8.3"
+        const val gradleBuildToolsVersion = "4.1.3"
 
     }
 
-    const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.gradleBuildToolsVersion}"
+    const val androidGradleBuildToolsPlugin = "com.android.tools.build:gradle:${Versions.gradleBuildToolsVersion}"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Kotlin.standardVersion}"
-    const val androidApplication = "com.android.application"
-    const val kotlinAndroid = "kotlin-android"
-    const val kotlinKapt = "kotlin-kapt"
-    const val hiltPlugin = "dagger.hilt.android.plugin"
     const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Libraries.OpenVersions.hilt}"
-    const val navigationGradlePlugin = "androidx.navigation:navigation-safe-args-gradle-plugin::${Libraries.OpenVersions.navigation}"
-    const val navigationPluginKotlin = "androidx.navigation.safeargs.kotlin"
-    const val navigationPlugin = "androidx.navigation.safeargs"
+    const val navigationSafeArgsGradlePlugin = "androidx.navigation:navigation-safe-args-gradle-plugin::${Libraries.OpenVersions.navigation}"
 }
 
-object ScriptPlugins {
-    const val infrastructure = "scripts.infrastructure"
-    const val variants = "scripts.variants"
-    const val quality = "scripts.quality"
-    const val compilation = "scripts.compilation"
-}
 
 // 第三方库依赖
 object Libraries {

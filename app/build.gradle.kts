@@ -1,19 +1,19 @@
 
 plugins {
-    id(BuildPlugins.androidApplication)
-    id(BuildPlugins.kotlinAndroid)
-    id(BuildPlugins.kotlinKapt)
+    id(GradlePluginId.ANDROID_APPLICATION)
+    id(GradlePluginId.KOTLIN_ANDROID)
+    id(GradlePluginId.KOTLIN_KAPT)
 }
 
 android {
-    compileSdkVersion(AndroidSdk.compileSdkVersion)
-    buildToolsVersion(AndroidSdk.buildToolsVersion)
+    compileSdkVersion(AndroidConfig.compileSdkVersion)
+    buildToolsVersion(AndroidConfig.buildToolsVersion)
     defaultConfig {
-        applicationId = AndroidSdk.applicationId
-        minSdkVersion(AndroidSdk.minSdkVersion)
-        targetSdkVersion(AndroidSdk.targetSdkVersion)
-        versionCode = AndroidSdk.versionCode
-        versionName = AndroidSdk.versionName
+        applicationId = AndroidConfig.applicationId
+        minSdkVersion(AndroidConfig.minSdkVersion)
+        targetSdkVersion(AndroidConfig.targetSdkVersion)
+        versionCode = AndroidConfig.versionCode
+        versionName = AndroidConfig.versionName
         testInstrumentationRunner = AndroidConfig.testRunner
     }
     buildTypes {
@@ -27,7 +27,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 
     compileOptions {
