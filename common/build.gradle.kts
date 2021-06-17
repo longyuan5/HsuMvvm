@@ -2,6 +2,7 @@ plugins {
     id(GradlePluginId.ANDROID_LIBRARY)
     id(GradlePluginId.KOTLIN_ANDROID)
     id(GradlePluginId.KOTLIN_KAPT)
+    id(GradlePluginId.HILT_PLUGIN)
 }
 
 android {
@@ -57,6 +58,10 @@ dependencies {
     // Persistence
     implementation(Libraries.room)
     kapt(Libraries.roomCompiler)
+
+    //ioc
+    implementation(Libraries.hiltAndroid)
+    kapt(Libraries.hiltAndroidCompiler)
 
     // Test
     //    testImplementation(TestLibraries.junit4)

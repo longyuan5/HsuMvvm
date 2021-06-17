@@ -56,7 +56,7 @@ object Libraries {
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Kotlin.standardVersion}"
-    const val kotlinCoroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Kotlin.coroutinesVersion}"
+    const val kotlinCoroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Kotlin.coroutinesVersion}"
     const val kotlinCoroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Kotlin.coroutinesVersion}"
     const val ktxCore = "androidx.core:core-ktx:${Kotlin.ktxVersion}"
 
