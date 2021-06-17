@@ -2,6 +2,7 @@
 buildscript {
 
     repositories {
+        mavenLocal()
         maven { setUrl("https://maven.aliyun.com/repository/google") }
         maven { setUrl("https://maven.aliyun.com/repository/central") }
         maven { setUrl("https://maven.aliyun.com/repository/public") }
@@ -20,6 +21,7 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenLocal()
         maven { setUrl("https://maven.aliyun.com/repository/google") }
         maven { setUrl("https://maven.aliyun.com/repository/central") }
         maven { setUrl("https://maven.aliyun.com/repository/public") }

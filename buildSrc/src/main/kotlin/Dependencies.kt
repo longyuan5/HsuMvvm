@@ -1,8 +1,8 @@
 //kotlin版本
 object Kotlin {
-    const val standardVersion = "1.4.31"
-    const val coroutinesVersion = "1.4.1"
-    const val ktxVersion = "1.3.2"
+    const val standardVersion = "1.5.10"
+    const val coroutinesVersion = "1.5.0"
+    const val ktxVersion = "1.5.0"
 }
 
 
