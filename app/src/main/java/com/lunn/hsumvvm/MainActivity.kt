@@ -21,10 +21,4 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
-
-
-
-
 }

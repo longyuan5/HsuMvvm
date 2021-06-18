@@ -1,8 +1,8 @@
-
 plugins {
     id(GradlePluginId.ANDROID_APPLICATION)
     id(GradlePluginId.KOTLIN_ANDROID)
     id(GradlePluginId.KOTLIN_KAPT)
+    id(GradlePluginId.HILT_PLUGIN)
 }
 
 android {
@@ -20,10 +20,18 @@ android {
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
+    }
+
+    buildFeatures {
+        viewBinding = true
+
+    }
+
+    lintOptions {
+
     }
 
     kotlinOptions {
@@ -40,6 +48,7 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    implementation(project(ModuleDependency.COMMON))
 
     // Architecture
     implementation(Libraries.kotlinStdLib)
@@ -63,7 +72,7 @@ dependencies {
     kapt(Libraries.hiltAndroidCompiler)
 
     // Test
-//    testImplementation(TestLibraries.junit4)
-//    androidTestImplementation(TestLibraries.testExtJunit)
-//    androidTestImplementation(TestLibraries.espressoCore)
+    //    testImplementation(TestLibraries.junit4)
+    //    androidTestImplementation(TestLibraries.testExtJunit)
+    //    androidTestImplementation(TestLibraries.espressoCore)
 }
