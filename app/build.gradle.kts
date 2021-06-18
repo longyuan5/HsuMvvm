@@ -52,11 +52,15 @@ dependencies {
 
     // Retrofit
     implementation(Libraries.retrofit)
-    implementation(Libraries.retrofitGson)
+    implementation(Libraries.retrofitConverterGson)
 
     // Persistence
     implementation(Libraries.room)
     kapt(Libraries.roomCompiler)
+
+    //ioc
+    implementation(Libraries.hiltAndroid)
+    kapt(Libraries.hiltAndroidCompiler)
 
     // Test
 //    testImplementation(TestLibraries.junit4)

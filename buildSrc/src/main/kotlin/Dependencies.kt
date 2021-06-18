@@ -25,15 +25,15 @@ object GlobalBuildGradle {
 object Libraries {
 
     object OpenVersions {
-        const val hilt = "2.28-alpha"
+        const val hilt = "2.37"
         const val navigation = "2.3.4"
     }
 
     private object Versions {
 
         //android X
-        const val appCompat = "1.2.0"
-        const val constraintLayout = "2.0.2"
+        const val appCompat = "1.4.0-alpha02"
+        const val constraintLayout = "2.1.0-beta02"
         const val material = "1.1.0"
         const val annotations = "1.1.0"
         const val dynamicAnimation = "1.1.0"
@@ -45,12 +45,14 @@ object Libraries {
         const val workManager = "2.4.0-rc01"
         const val startup = "1.0.0"
         const val dataStore = "1.0.0-alpha06"
+        const val hiltJetpack = "1.0.0"
 
         //第三方
         const val glide = "4.12.0"
         const val gson = "2.8.6"
-        const val rxJava = "3.0.11"
-        const val okHttp = "3.14.9"
+        const val rxJava = "3.0.13"
+        const val rxAndroid = "3.0.0"
+        const val okHttp = "4.9.0"
         const val retrofit = "2.9.0"
         const val dagger = "2.33"
     }
@@ -85,6 +87,9 @@ object Libraries {
     const val startup = "androidx.startup:startup-runtime:${Versions.startup}"
     const val hiltAndroid = "com.google.dagger:hilt-android:${OpenVersions.hilt}"
     const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:${OpenVersions.hilt}"
+    const val hiltJetpackCompiler = "androidx.hilt:hilt-compiler:${Versions.hiltJetpack}"
+    const val hiltJetpackViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hiltJetpack}"
+    const val hiltJetpackWorkManager = "androidx.hilt:hilt-work:${Versions.hiltJetpack}"
 
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
