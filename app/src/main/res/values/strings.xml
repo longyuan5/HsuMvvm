@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HsuMvvm</string>
+    <string name="title_user">user</string>
 </resources>

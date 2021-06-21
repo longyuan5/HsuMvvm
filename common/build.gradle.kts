@@ -43,25 +43,33 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
     // Architecture
-    implementation(Libraries.kotlinStdLib)
-    implementation(Libraries.ktxCore)
-    implementation(Libraries.appCompat)
-    implementation(Libraries.constraintLayout)
-    implementation(Libraries.material)
-    implementation(Libraries.viewModel)
-    implementation(Libraries.liveData)
+    api(Libraries.kotlinStdLib)
+    api(Libraries.ktxCore)
+    api(Libraries.appCompat)
+    api(Libraries.constraintLayout)
+    api(Libraries.material)
+    api(Libraries.viewModelKtx)
+    api(Libraries.liveDataKtx)
 
-    // Retrofit
-    implementation(Libraries.retrofit)
+    // network
+    api(Libraries.retrofit)
     implementation(Libraries.retrofitConverterGson)
+    implementation(Libraries.okHttpLogInterceptor)
+
+    // image
+    api(Libraries.glide)
+    kapt(Libraries.glideCompiler)
 
     // Persistence
-    implementation(Libraries.room)
+    api(Libraries.room)
     kapt(Libraries.roomCompiler)
 
     //ioc
-    implementation(Libraries.hiltAndroid)
+    api(Libraries.hiltAndroid)
     kapt(Libraries.hiltAndroidCompiler)
+
+
+
 
     // Test
     //    testImplementation(TestLibraries.junit4)
