@@ -54,17 +54,11 @@ android {
         sourceCompatibility(JavaVersion.VERSION_1_8)
         targetCompatibility(JavaVersion.VERSION_1_8)
     }
-    dynamicFeatures = mutableSetOf(":user")
     dexOptions {
         preDexLibraries = true
         jumboMode = true
         javaMaxHeapSize = "8g"
         threadCount = 8
-    }
-    bundle {
-        language { enableSplit = true }
-        density { enableSplit = true }
-        abi { enableSplit = true }
     }
 }
 
@@ -74,8 +68,8 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     api(project(ModuleDependency.BUSINESS))
     kapt(Libraries.roomCompiler)
+    implementation(Libraries.hiltAndroid)
     kapt(Libraries.hiltAndroidCompiler)
-    api(Libraries.hiltAndroid)
     // Test
     //    testImplementation(TestLibraries.junit4)
     //    androidTestImplementation(TestLibraries.testExtJunit)

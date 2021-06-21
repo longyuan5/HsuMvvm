@@ -65,7 +65,7 @@ dependencies {
     kapt(Libraries.roomCompiler)
 
     //ioc
-    api(Libraries.hiltAndroid)
+    implementation(Libraries.hiltAndroid)
     kapt(Libraries.hiltAndroidCompiler)
 
 

@@ -45,7 +45,7 @@ dependencies {
     kapt(Libraries.glideCompiler)
     kapt(Libraries.roomCompiler)
     kapt(Libraries.hiltAndroidCompiler)
-    api(Libraries.hiltAndroid)
+    implementation(Libraries.hiltAndroid)
 
 
 }
