@@ -2,7 +2,7 @@ object AndroidConfig {
     const val versionCode = 1
     const val versionName = "1.0.0"
     const val minSdkVersion = 21
-    private const val compileSdkVersion = 31
+    const val compileSdkVersion = 31
     const val targetSdkVersion = compileSdkVersion
     const val buildToolsVersion = "31.0.0"
     const val applicationId = "com.lunn.hsumvvm"
