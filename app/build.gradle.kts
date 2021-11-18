@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion(AndroidConfig.compileSdkVersion)
-    buildToolsVersion(AndroidConfig.buildToolsVersion)
+    compileSdk = AndroidConfig.compileSdkVersion
+    buildToolsVersion = AndroidConfig.buildToolsVersion
     defaultConfig {
         applicationId = AndroidConfig.applicationId
-        minSdkVersion(AndroidConfig.minSdkVersion)
-        targetSdkVersion(AndroidConfig.targetSdkVersion)
+        minSdk = AndroidConfig.minSdkVersion
+        targetSdk = AndroidConfig.targetSdkVersion
         versionCode = AndroidConfig.versionCode
         versionName = AndroidConfig.versionName
         testInstrumentationRunner = AndroidConfig.testRunner
@@ -21,6 +21,7 @@ android {
         getByName("release") {
             isMinifyEnabled = true
             isShrinkResources = false
+            isDebuggable = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
@@ -29,6 +30,7 @@ android {
         getByName("debug") {
             isMinifyEnabled = false
             isShrinkResources = false
+            isDebuggable = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
@@ -40,7 +42,7 @@ android {
 
     }
 
-    lintOptions {
+    lint {
 
     }
 
@@ -51,12 +53,6 @@ android {
     compileOptions {
         sourceCompatibility(JavaVersion.VERSION_11)
         targetCompatibility(JavaVersion.VERSION_11)
-    }
-    dexOptions {
-        preDexLibraries = true
-        jumboMode = true
-        javaMaxHeapSize = "8g"
-        threadCount = 8
     }
 }
 

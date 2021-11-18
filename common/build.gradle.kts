@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion(AndroidConfig.compileSdkVersion)
-    buildToolsVersion(AndroidConfig.buildToolsVersion)
+    compileSdk = AndroidConfig.compileSdkVersion
+    buildToolsVersion = AndroidConfig.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion(AndroidConfig.minSdkVersion)
-        targetSdkVersion(AndroidConfig.targetSdkVersion)
+        minSdk = AndroidConfig.minSdkVersion
+        targetSdk = AndroidConfig.targetSdkVersion
         testInstrumentationRunner = AndroidConfig.testRunner
         consumerProguardFiles("consumer-rules.pro")
     }
