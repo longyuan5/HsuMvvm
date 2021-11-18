@@ -2,9 +2,9 @@ object AndroidConfig {
     const val versionCode = 1
     const val versionName = "1.0.0"
     const val minSdkVersion = 21
-    const val compileSdkVersion = 30
+    const val compileSdkVersion = 31
     const val targetSdkVersion = compileSdkVersion
-    const val buildToolsVersion = "29.0.3"
+    const val buildToolsVersion = "31.0.0"
     const val applicationId = "com.lunn.hsumvvm"
     const val testRunner = "androidx.test.runner.AndroidJUnitRunner"
 }

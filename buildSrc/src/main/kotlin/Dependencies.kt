@@ -1,8 +1,8 @@
 //kotlin版本
 object Kotlin {
-    const val standardVersion = "1.5.10"
-    const val coroutinesVersion = "1.5.0"
-    const val ktxVersion = "1.5.0"
+    const val standardVersion = "1.6.0"
+    const val coroutinesVersion = "1.5.2"
+    const val ktxVersion = "1.7.0"
 }
 
 
@@ -10,8 +10,8 @@ object Kotlin {
 object GlobalBuildGradle {
 
     private object Versions {
-        const val gradleVersion = "6.8.3"
-        const val gradleBuildToolsVersion = "4.2.1"
+        const val gradleVersion = "7.3"
+        const val gradleBuildToolsVersion = "7.0.3"
     }
 
     const val androidGradleBuildToolsPlugin = "com.android.tools.build:gradle:${Versions.gradleBuildToolsVersion}"
@@ -32,19 +32,19 @@ object Libraries {
     private object Versions {
 
         //android X
-        const val appCompat = "1.4.0-alpha02"
-        const val constraintLayout = "2.1.0-beta02"
+        const val appCompat = "1.4.0"
+        const val constraintLayout = "2.1.1"
         const val material = "1.1.0"
         const val annotations = "1.1.0"
         const val dynamicAnimation = "1.1.0"
 
         // JetPack
         const val lifecycle = "2.3.0"
-        const val paging = "3.0.0-alpha02"
+        const val paging = "3.0.1"
         const val room = "2.2.5"
-        const val workManager = "2.4.0-rc01"
+        const val workManager = "2.7.0"
         const val startup = "1.0.0"
-        const val dataStore = "1.0.0-alpha06"
+        const val dataStore = "1.0.0"
         const val hiltJetpack = "1.0.0"
 
         //第三方
