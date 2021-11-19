@@ -7,11 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.hi.dhl.binding.viewbind
 import com.lunn.hsumvvm.R
+import com.lunn.hsumvvm.databinding.MainFragmentBinding
 
 class MainFragment : Fragment(R.layout.main_fragment) {
 
-    var msg : String? = null
+    private val binding: MainFragmentBinding by viewbind()
 
     companion object {
         fun newInstance() = MainFragment()
@@ -24,7 +26,7 @@ class MainFragment : Fragment(R.layout.main_fragment) {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
 
-        view?.findViewById<TextView>(R.id.message)?.text = "我是测试"
+        binding.message.text = "我是测试"
     }
 
 

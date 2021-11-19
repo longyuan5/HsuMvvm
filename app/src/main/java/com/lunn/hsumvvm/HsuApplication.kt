@@ -4,7 +4,6 @@ import android.app.Application
 import android.os.StrictMode
 import android.os.StrictMode.VmPolicy
 import com.lunn.common.UtilCommon
-import dagger.hilt.android.HiltAndroidApp
 
 /**
  * @author mac
@@ -13,7 +12,6 @@ import dagger.hilt.android.HiltAndroidApp
  * @note
  */
 
-@HiltAndroidApp
 class HsuApplication : Application() {
 
     override fun onCreate() {

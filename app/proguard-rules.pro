@@ -19,3 +19,13 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+
+
+
+# Binding库 https://github.com/hi-dhl/Binding/blob/main/doc/README_CN.md
+-keepclassmembers class ** implements androidx.viewbinding.ViewBinding {
+    public static ** bind(***);
+    public static ** inflate(***);
+}
+

@@ -2,7 +2,6 @@ plugins {
     id(GradlePluginId.ANDROID_LIBRARY)
     id(GradlePluginId.KOTLIN_ANDROID)
     id(GradlePluginId.KOTLIN_KAPT)
-    id(GradlePluginId.HILT_PLUGIN)
 }
 
 android {
@@ -55,16 +54,16 @@ dependencies {
     implementation(Libraries.okHttpLogInterceptor)
 
     // image
-    api(Libraries.glide)
-    kapt(Libraries.glideCompiler)
+//    api(Libraries.glide)
+//    kapt(Libraries.glideCompiler)
 
     // Persistence
-    api(Libraries.room)
-    kapt(Libraries.roomCompiler)
+//    api(Libraries.room)
+//    kapt(Libraries.roomCompiler)
 
     //ioc
-    implementation(Libraries.hiltAndroid)
-    kapt(Libraries.hiltAndroidCompiler)
+//    implementation(Libraries.hiltAndroid)
+//    kapt(Libraries.hiltAndroidCompiler)
 
 
 

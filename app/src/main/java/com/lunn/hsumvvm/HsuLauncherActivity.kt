@@ -1,7 +1,7 @@
 package com.lunn.hsumvvm
 
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * @author mac
@@ -10,9 +10,13 @@ import dagger.hilt.android.AndroidEntryPoint
  * @note
  */
 
-@AndroidEntryPoint
 class HsuLauncherActivity : AppCompatActivity() {
 
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
 
 
 

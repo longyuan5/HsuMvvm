@@ -2,7 +2,6 @@ plugins {
     id(GradlePluginId.ANDROID_LIBRARY)
     id(GradlePluginId.KOTLIN_ANDROID)
     id(GradlePluginId.KOTLIN_KAPT)
-    id(GradlePluginId.HILT_PLUGIN)
 }
 
 android {
@@ -40,10 +39,10 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     api(project(ModuleDependency.COMMON))
-    kapt(Libraries.glideCompiler)
-    kapt(Libraries.roomCompiler)
-    kapt(Libraries.hiltAndroidCompiler)
-    implementation(Libraries.hiltAndroid)
+
+
+    //第三方库
+    api("com.hi-dhl:binding:1.1.3")
 
 
 }

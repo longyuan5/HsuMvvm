@@ -2,7 +2,6 @@ plugins {
     id(GradlePluginId.ANDROID_APPLICATION)
     id(GradlePluginId.KOTLIN_ANDROID)
     id(GradlePluginId.KOTLIN_KAPT)
-    id(GradlePluginId.HILT_PLUGIN)
 }
 
 android {
@@ -61,9 +60,8 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     api(project(ModuleDependency.BUSINESS))
-    kapt(Libraries.roomCompiler)
-    implementation(Libraries.hiltAndroid)
-    kapt(Libraries.hiltAndroidCompiler)
+
+
     // Test
     //    testImplementation(TestLibraries.junit4)
     //    androidTestImplementation(TestLibraries.testExtJunit)
