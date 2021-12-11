@@ -11,7 +11,7 @@ object GlobalBuildGradle {
 
     private object Versions {
         const val gradleVersion = "7.3"
-        const val gradleBuildToolsVersion = "7.0.3"
+        const val gradleBuildToolsVersion = "7.0.4"
     }
 
     const val androidGradleBuildToolsPlugin = "com.android.tools.build:gradle:${Versions.gradleBuildToolsVersion}"
