@@ -11,8 +11,9 @@ object ModuleDependency {
     const val FEATURE_ME = ":feature_me"
     const val LIBRARY_TEST_UTILS = ":library_test_utils"
 
-    private fun getAllModules() = ModuleDependency::class.memberProperties.filter { it.isConst }
-        .map { it.getter.call().toString() }.toSet()
+    private fun getAllModules(): Set<String> =
+        ModuleDependency::class.memberProperties.filter { it.isConst }
+            .map { it.getter.call().toString() }.toSet()
 
     fun getFeatureModules(): Set<String> {
         val featurePrefix = ":feature_"
