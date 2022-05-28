@@ -11,7 +11,7 @@ object GlobalBuildGradle {
 
     private object Versions {
         const val gradleVersion = "7.4.2"
-        const val gradleBuildToolsVersion = "8.0"
+        const val gradleBuildToolsVersion = "7.2.1"
     }
 
     const val androidGradleBuildToolsPlugin = "com.android.tools.build:gradle:${Versions.gradleBuildToolsVersion}"
@@ -25,36 +25,36 @@ object GlobalBuildGradle {
 object Libraries {
 
     object OpenVersions {
-        const val hilt = "2.37"
-        const val navigation = "2.3.4"
+        const val hilt = "2.41"
+        const val navigation = "2.4.1"
     }
 
     private object Versions {
 
         //android X
-        const val appCompat = "1.4.0"
-        const val constraintLayout = "2.1.1"
-        const val material = "1.1.0"
-        const val annotations = "1.1.0"
+        const val appCompat = "1.4.1"
+        const val constraintLayout = "2.1.3"
+        const val material = "1.6.0"
+        const val annotations = "1.3.0"
         const val dynamicAnimation = "1.1.0"
 
         // JetPack
         const val lifecycle = "2.3.0"
-        const val paging = "3.0.1"
-        const val room = "2.2.5"
-        const val workManager = "2.7.0"
-        const val startup = "1.0.0"
+        const val paging = "3.1.1"
+        const val room = "2.4.2"
+        const val workManager = "2.7.1"
+        const val startup = "1.1.1"
         const val dataStore = "1.0.0"
         const val hiltJetpack = "1.0.0"
 
         //第三方
-        const val glide = "4.12.0"
-        const val gson = "2.8.6"
+        const val glide = "4.13.1"
+        const val gson = "2.9.0"
         const val rxJava = "3.0.13"
         const val rxAndroid = "3.0.0"
-        const val okHttp = "4.9.0"
+        const val okHttp = "4.9.3"
         const val retrofit = "2.9.0"
-        const val dagger = "2.33"
+        const val dagger = "2.41"
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Kotlin.standardVersion}"
@@ -110,9 +110,9 @@ object Libraries {
 object TestLibraries {
     private object Versions {
         const val junit = "4.13.2"
-        const val mockk = "1.10.0"
-        const val robolectric = "4.4"
-        const val kluent = "1.14"
+        const val mockk = "1.12.3"
+        const val robolectric = "4.7.3"
+        const val kluent = "1.68"
         const val testRunner = "1.1.0"
         const val testRules = "1.1.0"
         const val espressoCore = "3.2.0"
@@ -134,7 +134,7 @@ object TestLibraries {
 //开发调试库依赖
 object DevLibraries {
     private object Versions {
-        const val leakCanary = "2.5"
+        const val leakCanary = "2.8.1"
     }
 
     const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"

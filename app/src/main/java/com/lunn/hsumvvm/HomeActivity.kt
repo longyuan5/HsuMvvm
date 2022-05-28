@@ -8,7 +8,7 @@ import com.lunn.hsumvvm.ui.main.MainFragment
 
 class HomeActivity : AppCompatActivity() {
 
-    val binding: MainActivityBinding by viewbind()
+    private val binding: MainActivityBinding by viewbind()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
