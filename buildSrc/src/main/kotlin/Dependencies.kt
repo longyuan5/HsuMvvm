@@ -1,7 +1,7 @@
 //kotlin版本
 object Kotlin {
-    const val standardVersion = "1.6.0"
-    const val coroutinesVersion = "1.5.2"
+    const val standardVersion = "1.6.21"
+    const val coroutinesVersion = "1.6.2"
     const val ktxVersion = "1.7.0"
 }
 
@@ -10,8 +10,8 @@ object Kotlin {
 object GlobalBuildGradle {
 
     private object Versions {
-        const val gradleVersion = "7.3"
-        const val gradleBuildToolsVersion = "7.0.4"
+        const val gradleVersion = "7.4.2"
+        const val gradleBuildToolsVersion = "8.0"
     }
 
     const val androidGradleBuildToolsPlugin = "com.android.tools.build:gradle:${Versions.gradleBuildToolsVersion}"
