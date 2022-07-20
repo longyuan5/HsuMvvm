@@ -134,7 +134,7 @@ object TestLibraries {
 //开发调试库依赖
 object DevLibraries {
     private object Versions {
-        const val leakCanary = "2.8.1"
+        const val leakCanary = "2.9.1"
     }
 
     const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"
