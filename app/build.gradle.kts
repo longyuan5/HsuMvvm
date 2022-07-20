@@ -17,19 +17,19 @@ android {
         multiDexEnabled = true
     }
     buildTypes {
-        getByName("release") {
-            isMinifyEnabled = true
-            isShrinkResources = false
-            isDebuggable = false
+        getByName(BuildType.RELEASE) {
+            isMinifyEnabled = BuildTypeRelease.isMinifyEnabled
+            isShrinkResources = BuildTypeRelease.isShrinkResources
+            isDebuggable = BuildTypeRelease.isDebuggable
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
 
-        getByName("debug") {
-            isMinifyEnabled = false
-            isShrinkResources = false
-            isDebuggable = true
+        getByName(BuildType.DEBUG) {
+            isMinifyEnabled = BuildTypeDebug.isMinifyEnabled
+            isShrinkResources = BuildTypeDebug.isShrinkResources
+            isDebuggable = BuildTypeDebug.isDebuggable
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )

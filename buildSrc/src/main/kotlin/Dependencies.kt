@@ -1,8 +1,8 @@
 //kotlin版本
 object Kotlin {
-    const val standardVersion = "1.7.0"
-    const val coroutinesVersion = "1.6.3"
-    const val ktxVersion = "1.7.0"
+    const val standardVersion = "1.7.10"
+    const val coroutinesVersion = "1.6.4"
+    const val ktxVersion = "1.8.0"
 }
 
 
@@ -10,7 +10,7 @@ object Kotlin {
 object GlobalBuildGradle {
 
     private object Versions {
-        const val gradleVersion = "7.4.2"
+        const val gradleVersion = "7.5"
         const val gradleBuildToolsVersion = "7.2.1"
     }
 
@@ -32,10 +32,10 @@ object Libraries {
     private object Versions {
 
         //android X
-        const val appCompat = "1.4.1"
-        const val constraintLayout = "2.1.3"
-        const val material = "1.6.0"
-        const val annotations = "1.3.0"
+        const val appCompat = "1.4.2"
+        const val constraintLayout = "2.1.4"
+        const val material = "1.6.1"
+        const val annotations = "1.4.0"
         const val dynamicAnimation = "1.1.0"
 
         // JetPack
