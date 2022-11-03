@@ -1,4 +1,4 @@
-package com.lunn.common
+package com.lunn.common.util
 
 import android.app.Application
 import android.content.Context

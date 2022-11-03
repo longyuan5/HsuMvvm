@@ -2,7 +2,7 @@
 object Kotlin {
     const val standardVersion = "1.7.10"
     const val coroutinesVersion = "1.6.4"
-    const val ktxVersion = "1.8.0"
+    const val ktxVersion = "1.9.0"
 }
 
 
@@ -11,7 +11,7 @@ object GlobalBuildGradle {
 
     private object Versions {
         const val gradleVersion = "7.5"
-        const val gradleBuildToolsVersion = "7.2.1"
+        const val gradleBuildToolsVersion = "7.3.1"
     }
 
     const val androidGradleBuildToolsPlugin = "com.android.tools.build:gradle:${Versions.gradleBuildToolsVersion}"
@@ -69,6 +69,7 @@ object Libraries {
     const val androidAnnotations = "androidx.annotation:annotation:${Versions.annotations}"
 
     const val viewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
     const val liveDataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
     const val viewModelSaveState = "androidx.lifecycle:lifecycle-viewmodel-savedstate:${Versions.lifecycle}"
     const val lifecycleService = "androidx.lifecycle:lifecycle-service:${Versions.lifecycle}"

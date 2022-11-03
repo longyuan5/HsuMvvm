@@ -1,6 +1,9 @@
 object AndroidConfig {
     const val versionCode = 1
-    const val versionName = "1.0.0"
+    private const val majorVersion = 1
+    private const val minorVersion = 1
+    private const val patchVersion = 0
+    const val versionName = "$majorVersion.$minorVersion.$patchVersion"
     const val minSdkVersion = 24
     const val compileSdkVersion = 33
     const val targetSdkVersion = compileSdkVersion

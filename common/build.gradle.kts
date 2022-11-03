@@ -42,16 +42,19 @@ dependencies {
     // Architecture
     api(Libraries.kotlinStdLib)
     api(Libraries.ktxCore)
+    api(Libraries.kotlinCoroutinesAndroid)
     api(Libraries.appCompat)
     api(Libraries.constraintLayout)
     api(Libraries.material)
     api(Libraries.viewModelKtx)
     api(Libraries.liveDataKtx)
+    api(Libraries.lifecycleRuntimeKtx)
 
     // network
     api(Libraries.retrofit)
     implementation(Libraries.retrofitConverterGson)
     implementation(Libraries.okHttpLogInterceptor)
+
 
     // image
 //    api(Libraries.glide)

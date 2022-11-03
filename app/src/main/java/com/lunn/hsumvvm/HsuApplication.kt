@@ -3,7 +3,7 @@ package com.lunn.hsumvvm
 import android.app.Application
 import android.os.StrictMode
 import android.os.StrictMode.VmPolicy
-import com.lunn.common.UtilCommon
+import com.lunn.common.util.UtilCommon
 
 /**
  * @author mac
