@@ -55,6 +55,7 @@ object Libraries {
         const val okHttp = "4.9.3"
         const val retrofit = "2.9.0"
         const val dagger = "2.41"
+        const val okio = "3.2.0"
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Kotlin.standardVersion}"
@@ -104,6 +105,7 @@ object Libraries {
     const val glideTransformations = "jp.wasabeef:glide-transformations:4.0.0"
     const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
     const val daggerCompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
+    const val okio = "com.squareup.okio:okio:${Versions.okio}"
 
 }
 
